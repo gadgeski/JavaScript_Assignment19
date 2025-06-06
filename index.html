@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>スクロール表示</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">スクロールして要素を表示</div>
+
+    <div class="intro-section">
+      <p>
+        このページをスクロールすると、隠れたコンテンツがフェードインします。
+      </p>
+      <p>新しいセクションを見るために下にスクロールしてください。</p>
+    </div>
+
+    <div class="scroll-section">
+      <img
+        src="img/Ver2_Tasty_Coffee2025.png"
+        alt="後味すっきり"
+        class="hidden-item"
+      />
+      <p class="hidden-item">
+        このテキストは、スクロールして画面に入ると表示されます。
+        コンテンツが見えるようになる仕組みを試してみましょう。
+      </p>
+    </div>
+
+    <div class="scroll-section">
+      <h2 class="hidden-item">セクション2タイトル</h2>
+      <p class="hidden-item">
+        JavaScriptで`getBoundingClientRect()`を使い、
+        要素がビューポートに入ったかを検知しています。
+      </p>
+      <img
+        src="img/Ver2_Tasty_Coffee2025_2.png"
+        alt="後味さっぱり"
+        class="hidden-item"
+      />
+    </div>
+
+    <div class="scroll-section">
+      <p class="hidden-item">
+        ページの終わり近くまでスクロールしてみてください。
+        さらに隠れたコンテンツが表示されるはずです。
+      </p>
+      <h2 class="hidden-item">セクション3 ここまで</h2>
+    </div>
+
+    <div class="spacer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
